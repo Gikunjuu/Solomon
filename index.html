@@ -128,14 +128,13 @@
 </section>
 <!--about us section end-->
 
-<!--services section start-->
 <section id="service" class="full_row">
     <div class="container">
         <div class="row">
-			<div class="side_title right"><span>Service</span></div>
+            <div class="side_title right"><span>Service</span></div>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="text_area text-center pb_80">
-                    <h2> <br> What Services I provide</h2>
+                    <h2> <br> What Services I Provide</h2>
                 </div>
             </div>
         </div>
@@ -146,7 +145,10 @@
                     <h4 class="my-4"><a class="color_primary" href="#">Mechanical Design and Analysis</a></h4>
                     <p>Offer expertise in designing mechanical systems and components, utilizing CAD (Computer-Aided Design) software to create detailed plans and schematics.
                         Perform stress analysis, thermal analysis, and simulations to ensure the structural integrity and efficiency of designs.</p>
-					<a href="#" class="btn_link">Learn More <i class="fa fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="btn_link" onclick="toggleDropdown('dropdown-1')">Learn More <i class="fa fa-arrow-right"></i></a>
+                    <div id="dropdown-1" class="dropdown-content">
+                        <p>Additional details and specifications about Mechanical Design and Analysis services.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
@@ -154,7 +156,16 @@
                     <i class="flaticon-edit"></i>
                     <h4 class="my-4"><a class="color_primary" href="#">Machine and Equipment Design</a></h4>
                     <p>Design custom machinery and equipment tailored to specific industry needs, optimizing efficiency and safety.</p>
-					<a href="#" class="btn_link">Learn More <i class="fa fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="btn_link" onclick="toggleDropdown('dropdown-2')">Learn More <i class="fa fa-arrow-right"></i></a>
+                    <div id="dropdown-2" class="dropdown-content">
+                        <div class="image-grid">
+                            <img src="images/WhatsApp Image 2024-09-08 at 12.23.57 (1).jpeg" alt="Machine Design 1" style="width:48%; margin: 1%;">
+                            <img src="images/WhatsApp Image 2024-09-08 at 12.25.19 (1).jpeg" alt="Machine Design 2" style="width:48%; margin: 1%;">
+                            <img src="images/WhatsApp Image 2024-09-08 at 12.27.37 (1).jpeg" alt="Machine Design 3" style="width:48%; margin: 1%;">
+                            <img src="images/WhatsApp Image 2024-09-09 at 11.21.41 (1).jpeg" alt="Machine Design 4" style="width:48%; margin: 1%;">
+                        </div>
+                        <p>Further insights and case studies about custom machine and equipment design.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
@@ -162,13 +173,48 @@
                     <i class="flaticon-support"></i>
                     <h4 class="my-4"><a class="color_primary" href="#">Structural Analysis</a></h4>
                     <p>Assess and analyze the structural integrity of buildings, bridges, or other structures, providing recommendations for strengthening or repair.</p>
-					<a href="#" class="btn_link">Learn More <i class="fa fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="btn_link" onclick="toggleDropdown('dropdown-3')">Learn More <i class="fa fa-arrow-right"></i></a>
+                    <div id="dropdown-3" class="dropdown-content">
+                        <p>Learn about the methodologies used in structural analysis and some of our past projects.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--services section end-->
+
+<script>
+function toggleDropdown(id) {
+    var dropdown = document.getElementById(id);
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+</script>
+
+<style>
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+</style>
+
 
 
 
