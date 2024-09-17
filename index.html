@@ -158,12 +158,12 @@
                     <p>Design custom machinery and equipment tailored to specific industry needs, optimizing efficiency and safety.</p>
                     <a href="javascript:void(0)" class="btn_link" onclick="toggleDropdown('dropdown-2')">Learn More <i class="fa fa-arrow-right"></i></a>
                     <div id="dropdown-2" class="dropdown-content">
-                        <div class="image-grid">
-                            <img src="images/WhatsApp Image 2024-09-08 at 12.23.57 (1).jpeg" alt="Machine Design 1" style="width:48%; margin: 1%;">
-                            <img src="images/WhatsApp Image 2024-09-08 at 12.25.19 (1).jpeg" alt="Machine Design 2" style="width:48%; margin: 1%;">
-                            <img src="images/WhatsApp Image 2024-09-08 at 12.27.37 (1).jpeg" alt="Machine Design 3" style="width:48%; margin: 1%;">
-                            <img src="images/WhatsApp Image 2024-09-09 at 11.21.41 (1).jpeg" alt="Machine Design 4" style="width:48%; margin: 1%;">
-                        </div>
+                        <ul class="image-list">
+                            <li><img src="images/WhatsApp Image 2024-09-08 at 12.23.57 (1).jpeg" alt="Machine Design 1" style="width:100%"></li>
+                            <li><img src="images/WhatsApp Image 2024-09-08 at 12.25.19 (1).jpeg" alt="Machine Design 2" style="width:100%"></li>
+                            <li><img src="images/WhatsApp Image 2024-09-08 at 12.27.37 (1).jpeg" alt="Machine Design 3" style="width:100%"></li>
+                            <li><img src="images/WhatsApp Image 2024-09-09 at 11.21.41 (1).jpeg" alt="Machine Design 4" style="width:100%"></li>
+                        </ul>
                         <p>Further insights and case studies about custom machine and equipment design.</p>
                     </div>
                 </div>
@@ -182,6 +182,41 @@
         </div>
     </div>
 </section>
+
+<script>
+function toggleDropdown(id) {
+    var dropdown = document.getElementById(id);
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+</script>
+
+<style>
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.image-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.image-list li {
+    margin-bottom: 15px;
+}
+
+.image-list img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
 
 <script>
 function toggleDropdown(id) {
